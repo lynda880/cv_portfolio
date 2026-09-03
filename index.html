@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PORTFOLIO - Luu-Lynda PHAM</title>
+  <meta name="description" content="Portfolio professionnel — Helpdesk, gestion des incidents, réseaux et cybersécurité.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- Polices : IBM Plex Mono (terminal / data) + IBM Plex Sans (corps de texte)
+       -> famille conçue pour l'univers IT/infra, cohérente avec le sujet du site -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (icônes) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner container">
+
+      <a href="#accueil" class="navbar__brand">
+        <span class="navbar__logo">&gt;_</span>
+        <span class="navbar__title">
+
+          <strong>Luu-Lynda PHAM</strong>
+          <small>Technicienne Support Informatique & Cybersécurité</small>
+        </span>
+      </a>
+
+      <nav class="navbar__nav" id="navMenu">
+        <a href="#competences" class="nav-link">Compétences</a>
+        <a href="#projets" class="nav-link">Projets</a>
+        <a href="#certifications" class="nav-link">Formations</a>
+        <a href="#contact" class="nav-link">Contact</a>
+
+        <a href="https://www.image2url.com/r2/default/documents/1787221474775-558549a3-cdb9-4326-a42e-32992180626e.pdf" target="_blank" rel="noopener"class="btn btn--ghost btn--sm" download>
+          <i class="fa-solid fa-download"></i> CV (PDF)
+        </a>
+      </nav>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="accueil">
+      <div class="container hero__grid">
+
+        <div class="hero__content">
+          <p class="eyebrow"><span class="dot"></span> Disponible pour une alternance / un poste en support &amp; sécurité</p>
+          <h1 class="hero__title">
+            Technicienne Support Informatique & Cybersécurité<br>
+            <span class="text-accent">LUU-LYNDA PHAM</span>
+          </h1>
+          <p class="hero__subtitle">
+          
+            Étudiante en cybersécurité orientée support : Helpdesk N1/N2, durcissement de systèmes
+            et analyse d'incidents. Rigueur, méthode, documentation.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#projets" class="btn btn--primary">Voir mes projets</a>
+            <a href="#contact" class="btn btn--outline">Me contacter</a>
+          </div>
+
+          <div class="hero__socials">
+
+            <a href="https://github.com/lynda880" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://profile.indeed.com/?hl=fr_FR&co=FR&from=gnav-homepage" target="_blank" rel="noopener" aria-label="Indeed"><i class="fa-solid fa-briefcase"></i></a>
+            <a href="mailto:luulynda.pham@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <!-- Fenêtre "terminal" animée : élément signature de la page -->
+        <div class="terminal" aria-hidden="true">
+          <div class="terminal__bar">
+            <span class="terminal__dot terminal__dot--red"></span>
+            <span class="terminal__dot terminal__dot--yellow"></span>
+            <span class="terminal__dot terminal__dot--green"></span>
+            <span class="terminal__path">linux-debian@user</span>
+          </div>
+          <div class="terminal__body" id="terminalBody">
+            <!-- Le contenu est animé par script.js -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== COMPÉTENCES ===================== -->
+    <section class="section" id="competences">
+      <div class="container">
+        <p class="section__eyebrow">// Compétences</p>
+        <h2 class="section__title">Ce que je maîtrise</h2>
+
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <div class="skill-card__icon"><i class="fa-solid fa-network-wired"></i></div>
+            <h3>Systèmes &amp; Réseaux</h3>
+            <ul class="tag-list">
+              <li>Active Directory</li>
+              <li>Windows Server</li>
+              <li>Linux (Bash)</li>
+              <li>Modèle OSI</li>
+              <li>TCP/IP</li>
+              <li>Wireshark</li>
+              <li>Domain Controller</li>
+              <li>DHCP / DNS</li>
+              <li>OU - Organizational Unit</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Sécurité</h3>
+            <ul class="tag-list">
+              <li>Gestion des accès (IAM)</li>
+              <li>Analyse de logs (SIEM basics)</li>
+              <li>Antivirus / EDR</li>
+              <li>Sensibilisation phishing</li>
+              <li>Protection contre les logiciels malveillants</li>
+              <li>Firewalls et filtrage réseau</li>
+              <li>Double authentification</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__icon"><i class="fa-solid fa-headset"></i></div>
+            <h3>Support &amp; Incident</h3>
+            <ul class="tag-list">
+              <li>Gestion de tickets</li>
+              <li>Diagnostic N1 / N2</li>
+              <li>Résolution d'incidents</li>
+              <li>Installation de matériels, logiciels et réseaux</li>
+              <li>Gestion des comptes et des accès</li>
+              <li>Assistance utilisateur</li>
+              <li>Escalade des incidents complexes</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJETS / LABS ===================== -->
+    <section class="section section--alt" id="projets">
+      <div class="container">
+        <p class="section__eyebrow">// Labs &amp; réalisations</p>
+        <h2 class="section__title">Projets techniques</h2>
+
+        <div class="projects-grid">
+
+          <!-- Projet 1 -->
+          <article class="project-card">
+            <div class="project-card__head">
+              <i class="fa-solid fa-server"></i>
+              <h3>Lab Active Directory</h3>
+            </div>
+            <div class="tag-list tag-list--pill">
+              <span>Windows Server</span>
+              <span>Active Directory</span>
+              <span>GPO</span>
+              <span>Domain Controller</span>
+            </div>
+            <p class="project-card__desc">
+              Déploiement d'un contrôleur de domaine, création d'unités d'organisation, mise en place
+              de stratégies de groupe (GPO) et d'organisation unitaire (OU).
+            </p>
+            <a href="https://github.com/lynda880/windows-server-active-directory" class="project-card__link" target="_blank" rel="noopener">
+              Voir sur GitHub / Write-up <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </article>
+
+          <!-- Projet 2 -->
+          <article class="project-card">
+            <div class="project-card__head">
+              <i class="fa-solid fa-magnifying-glass-chart"></i>
+              <h3>Discord Bot</h3>
+            </div>
+            <div class="tag-list tag-list--pill">
+              <span>Python</span>
+              <span>Discord API</span>
+              <span>Bot Development</span>
+            </div>
+            <p class="project-card__desc">
+              Développement d'un bot Discord avec des fonctionnalités personnalisées pour automatiser les tâches et améliorer l'expérience utilisateur avec des jeux.
+            </p>
+            <a href="https://github.com/lynda880/Discord_Casino_Bot" class="project-card__link" target="_blank" rel="noopener">
+              Voir sur GitHub / Write-up <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </article>
+
+          <!-- Projet 3 -->
+          <article class="project-card">
+            <div class="project-card__head">
+              <i class="fa-solid fa-ethernet"></i>
+              <h3>Analyse des trames réseau</h3>
+            </div>
+            <div class="tag-list tag-list--pill">
+              <span>Wireshark</span>
+              <span>TCP/IP</span>
+              <span>Détection d'anomalies</span>
+            </div>
+            <p class="project-card__desc">
+              Capture et analyse de trafic réseau suite à une simulation d'attaque (scan de ports, ARP
+              spoofing), identification des indicateurs de compromission et rédaction d'un rapport.
+            </p>
+            <a href="#" class="project-card__link" target="_blank" rel="noopener">
+              Voir sur GitHub / Write-up <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CERTIFICATIONS ===================== -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <p class="section__eyebrow">// Parcours</p>
+        <h2 class="section__title">Formations</h2>
+
+        <ul class="timeline">
+          <li class="timeline__item">
+            <span class="timeline__badge"><i class="fa-solid fa-certificate"></i></span>
+            <div class="timeline__content">
+              <h3>BTS CIRL - Informatique et Réseaux</h3>
+              <p>Fondamentaux de l'informatique, sécurité et des réseaux en entreprises.</p>
+              <span class="timeline__meta">En cours 2025 - 2028</span>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__badge"><i class="fa-solid fa-certificate"></i></span>
+            <div class="timeline__content">
+              <h3>BTS Comptabilité et Gestion</h3>
+              <p>Fondamentaux aux outils et pratiques de la comptabilité et de la gestion.</p>
+              <span class="timeline__meta">2024 - 2025</span>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__badge"><i class="fa-solid fa-graduation-cap"></i></span>
+            <div class="timeline__content">
+              <h3>Baccalauréat Technologique - Marketing & Gestion</h3>
+              <p>Spécialité Marketing et Gestion.</p>
+              <span class="timeline__meta">2023 – 2024</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section section--alt" id="contact">
+      <div class="container contact__grid">
+
+        <div class="contact__intro">
+          <p class="section__eyebrow">// Contact</p>
+          <h2 class="section__title">Discutons de votre besoin</h2>
+          <p class="contact__text">
+            Une question, une opportunité de stage ou d'alternance ? N'hésitez pas à me contacter directement.
+          </p>
+
+          <button class="email-copy" id="emailCopyBtn" data-email="luulynda.pham@gmail.com">
+            <i class="fa-solid fa-copy"></i>
+            <span id="emailCopyText">luulynda.pham@gmail.com</span>
+          </button>
+        </div>
+
+        <!-- Formulaire connecté à FormSubmit : remplace TON_EMAIL par ton adresse -->
+        <form class="contact-form" action="https://formsubmit.co/luulynda.pham@gmail.com" method="POST">
+          <!-- Options FormSubmit -->
+          <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" style="display:none">
+
+          <div class="form-field">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" required placeholder="Votre nom">
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="vous@exemple.com">
+          </div>
+
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Votre message..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full">
+            Envoyer le message <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; <span id="year"></span> Luu-Lynda PHAM. Construit avec HTML / CSS / JS.</p>
+      <div class="footer__socials">
+        <a href="https://github.com/lynda880" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://profile.indeed.com/?hl=fr_FR&co=FR&from=gnav-homepage" target="_blank" rel="noopener" aria-label="Indeed"><i class="fa-solid fa-briefcase"></i></a>
+        <a href="mailto:luulynda.pham@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bouton "retour en haut" -->
+  <button id="backToTop" class="back-to-top" aria-label="Retour en haut">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button> 
+
+  <script src="script.js"></script>
+</body>
+</html>
